@@ -11,6 +11,6 @@ let package = Package(
 		.package(url: "https://github.com/tadija/AEXML.git", majorVersion: 4, minor: 2),
 		.package(url: "https://github.com/ArtSabintsev/FontBlaster.git", majorVersion: 4, minor: 0),
 		.package(url: "https://github.com/fantim/JSQWebViewController.git", majorVersion: 6, minor: 1),
-		.package(url: "https://github.com/realm/realm-cocoa.git", majorVersion: 3, minor: 1),
+		.package(url: "https://github.com/realm/realm-cocoa.git", majorVersion: 3, minor: 1)
 	]
 )
