@@ -23,7 +23,7 @@ let package = Package(
           .target(
              name: "FolioReaderKit",
              dependencies: [],
-             path: "Sources"
+             path: "Source"
           ),
           .testTarget(
              name: "FolioReaderKitTests",
