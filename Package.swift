@@ -4,6 +4,24 @@ import PackageDescription
 
 let package = Package(
 	name: "FolioReaderKit",
+        platforms: [
+	   .iOS(SupportedPlatform.IOSVersion.v11)
+        ],
+        products: [
+          .library(name: "FolioReaderKit", targets: ["FolioReaderKit"])
+        ],
+        targets: [
+          .target(
+             name: "FolioReaderKit",
+             dependencies: [],
+             path: "Sources"
+          ),
+          .testTarget(
+             name: "FolioReaderKitTests",
+             dependencies: ["FolioReaderKit"],
+             path: "Tests"
+          )
+        ],
 	dependencies: [
 		.package(url: "https://github.com/ZipArchive/ZipArchive.git", from: "2.1.0"),
 		.package(url: "https://github.com/cxa/MenuItemKit.git", from: "3.0.0"),
